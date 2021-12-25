@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using Weather.Cli.Models;
 
 namespace Weather.Cli;
 

@@ -1,4 +1,4 @@
-﻿namespace Weather.Cli;
+﻿namespace Weather.Cli.Models;
 
 public class Main
 {

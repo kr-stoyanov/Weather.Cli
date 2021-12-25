@@ -1,5 +1,4 @@
-﻿namespace Weather.Cli;
-
+﻿namespace Weather.Cli.Models;
 public class WeatherResponse
 {
     public Weather[]? Weather { get; set; }
