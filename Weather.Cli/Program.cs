@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using System.Net;
 using Weather.Cli.Models;
 
 namespace Weather.Cli;
@@ -15,7 +16,7 @@ public class Program
         HttpClient? client = new HttpClient();
         var response = await client.GetAsync(url);
 
-        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+        if (response.StatusCode == HttpStatusCode.NotFound)
         {
             Console.WriteLine($"No weather found for {city}");
             return;
